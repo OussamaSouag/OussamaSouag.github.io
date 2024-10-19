@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Pour que le corps de la page prenne au moins toute la hauteur de l'écran */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+main {
+    display: flex;
+    flex: 1; /* Pour que le contenu de main puisse s'étirer pour remplir l'espace disponible */
+}
+
+#about {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+#projects {
+    flex-grow: 1; /* Pour que #projects prenne tout l'espace disponible */
+    padding: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    flex-shrink: 0; /* Pour que le footer ne rétrécisse pas */
+}
